@@ -7,6 +7,6 @@ Nun soll es anhand eines Skripts automatischen das Bild verkleinern und in den z
 
 ## Aufgabenaufteilung
 Zu Beginn haben wir uns mit dem Aufteilen der Aufgaben. Die Aufgaben unterscheiden sich nur zu Beginn, da wir schlussendlich alle an der Entwicklung des Skripts beschäftigt sind.
-- Kenin:     Einrichten der Architektur auf AWS, Entwicklung des Skripts
+- Kenin: *tabspace*Einrichten der Architektur auf AWS, Entwicklung des Skripts
 - Williams:  Erstellung und Einbindung des Skripts, Entwicklung des Skripts
-- Filip:     Erstellung und Umsetzung der Dokumentation, Entwicklung des Skripts
+- Filip: *tabspace*Erstellung und Umsetzung der Dokumentation, Entwicklung des Skripts
