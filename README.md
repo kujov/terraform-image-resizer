@@ -12,4 +12,23 @@ Zu Beginn haben wir uns mit dem Aufteilen der Aufgaben. Die Aufgaben unterscheid
 - Filip: Erstellung und Umsetzung der Dokumentation, Entwicklung des Skripts
 
 ## Planung
-Wir haben zuerst ein erstes Konzept für das Projekt erstellt. Nämlich haben wir uns dazu entschieden ein Terraformscript für die Erzeugung unserer Buckets, sowie für das Verkleinern der Bilder.
+Wir haben zuerst ein erstes Konzept für das Projekt erstellt.
+Nämlich haben wir uns dazu entschieden ein Terraformscript für die Erzeugung unserer Buckets, sowie für das Skalieren und Abspeichern der Bilder in den verschiedenen Buckets.
+Für Terraform haben wir uns entschieden, weil es einfacher organisiert ist und es auf Konfigurationen basiert.
+
+## Umsetzung unseres Scripts
+### Bildverkleinerung
+
+### Terraform
+
+### AWS - Lambda-Funktion
+
+### Hilfsmittel
+
+## Reflexion von Kenin
+Vorgabe: positive Punkte, Verbesserungsvorschläge für ein nächstes Projekt, Reflexion ist Substanz (nicht nur oberflächlich)
+## Reflexion von Williams
+Vorgabe: positive Punkte, Verbesserungsvorschläge für ein nächstes Projekt, Reflexion ist Substanz (nicht nur oberflächlich)
+## Reflexion von Filip
+Vorgabe: positive Punkte, Verbesserungsvorschläge für ein nächstes Projekt, Reflexion ist Substanz (nicht nur oberflächlich)
+## Quellen
