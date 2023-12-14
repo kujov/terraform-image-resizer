@@ -10,3 +10,6 @@ Zu Beginn haben wir uns mit dem Aufteilen der Aufgaben. Die Aufgaben unterscheid
 - Kenin: Einrichten der Architektur auf AWS, Entwicklung des Skripts
 - Williams:  Erstellung und Einbindung des Skripts, Entwicklung des Skripts
 - Filip: Erstellung und Umsetzung der Dokumentation, Entwicklung des Skripts
+
+## Planung
+Wir haben zuerst ein erstes Konzept für das Projekt erstellt. Nämlich haben wir uns dazu entschieden ein Terraformscript für die Erzeugung unserer Buckets, sowie für das Verkleinern der Bilder.
