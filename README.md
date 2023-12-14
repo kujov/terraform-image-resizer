@@ -10,3 +10,6 @@ Zu Beginn haben wir uns mit dem Aufteilen der Aufgaben. Die Aufgaben unterscheid
 - Kenin: Einrichten der Architektur auf AWS, Entwicklung des Skripts
 - Williams:  Erstellung und Einbindung des Skripts, Entwicklung des Skripts
 - Filip: Erstellung und Umsetzung der Dokumentation, Entwicklung des Skripts
+
+Quellen:
+- https://medium.com/@neonforge/how-to-generate-unique-s3-bucket-names-in-terraform-devops-pro-tips-4d14c38d597f
