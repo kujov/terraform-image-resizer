@@ -34,3 +34,4 @@ Vorgabe: positive Punkte, Verbesserungsvorschläge für ein nächstes Projekt, R
 ## Reflexion von Filip
 Vorgabe: positive Punkte, Verbesserungsvorschläge für ein nächstes Projekt, Reflexion ist Substanz (nicht nur oberflächlich)
 ## Quellen
+- https://medium.com/@neonforge/how-to-generate-unique-s3-bucket-names-in-terraform-devops-pro-tips-4d14c38d597f
