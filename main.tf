@@ -19,6 +19,16 @@ provider "aws" {
 
 data "aws_caller_identity" "current" {}
 
+data "archive_file" "lambda_code" {
+  type        = "zip"
+  output_path = "index.zip"
+
+  source {
+    content  = file("index.js")
+    filename = "index.js"
+  }
+}
+
 //Random id for name clash risk reduction
 resource "random_id" "generated" {
   byte_length = 8
