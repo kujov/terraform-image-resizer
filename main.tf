@@ -79,3 +79,6 @@ resource "aws_s3_bucket_notification" "s3_notification" {
   depends_on = [aws_lambda_permission.allow_s3]
 }
 
+output "first_bucket_name" {
+  value = aws_s3_bucket.imageResizerBefore.bucket
+}
