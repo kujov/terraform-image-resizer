@@ -1,12 +1,12 @@
 terraform {
   required_providers {
     aws = {
-      source = "hashicorp/aws"
+      source  = "hashicorp/aws"
       version = ">= 4.64.0"
     }
     //Random provider used for randstring generation
     random = {
-      source = "hashicorp/random"
+      source  = "hashicorp/random"
       version = ">= 3.0.0"
     }
   }
@@ -60,7 +60,7 @@ resource "aws_s3_bucket_notification" "s3_notification" {
 
   lambda_function {
     lambda_function_arn = aws_lambda_function.image_resizer_lambda_ninethousand.arn
-    events             = ["s3:ObjectCreated:*"]
+    events              = ["s3:ObjectCreated:*"]
   }
 
   depends_on = [aws_lambda_permission.allow_s3]
