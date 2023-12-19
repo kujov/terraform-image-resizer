@@ -54,7 +54,7 @@ resource "aws_lambda_permission" "allow_s3" {
   source_arn    = aws_s3_bucket.imageResizerBefore.arn
 }
 
-/S3 trigger for lambda func
+//S3 trigger for lambda func
 resource "aws_s3_bucket_notification" "s3_notification" {
   bucket = aws_s3_bucket.imageResizerBefore.bucket
 
