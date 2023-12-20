@@ -26,3 +26,11 @@ Quelle Layers: https://github.com/keithrozario/Klayers/blob/master/deployments/p
 
 Quellen:
 - https://medium.com/@neonforge/how-to-generate-unique-s3-bucket-names-in-terraform-devops-pro-tips-4d14c38d597f
+- https://docs.aws.amazon.com/lambda/latest/dg/chapter-layers.html
+- https://spacelift.io/blog/how-to-use-terraform-variables
+- https://stackoverflow.com/questions/53605776/how-to-enforce-terraform-destroy
+- https://stackoverflow.com/questions/57288992/terraform-how-to-create-iam-role-for-aws-lambda-and-deploy-both
+- https://stackoverflow.com/questions/65984400/how-to-delete-non-empty-s3-bucket-with-terraform
+- https://www.geeksforgeeks.org/python-pil-image-resize-method/
+- https://boto3.amazonaws.com/v1/documentation/api/latest/guide/s3-examples.html
+- https://hackernoon.com/how-to-use-aws-s3-with-python
