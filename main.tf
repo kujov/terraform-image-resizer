@@ -19,15 +19,7 @@ provider "aws" {
 
 data "aws_caller_identity" "current" {}
 
-data "archive_file" "lambda_code" {
-  type        = "zip"
-  output_path = "index.zip"
 
-  source {
-    content  = file("index.js")
-    filename = "index.js"
-  }
-}
 
 //Random id for name clash risk reduction
 resource "random_id" "generated" {
@@ -47,10 +39,13 @@ resource "aws_s3_bucket" "imageResizerAfter" {
 //Aws Lambda function
 resource "aws_lambda_function" "image_resizer_lambda_ninethousand" {
   function_name = "imageresizerlambda-${random_id.generated.hex}"
-  filename      = "index.zip"
-  handler       = "index.handler"
-  runtime       = "nodejs16.x"
+  filename      = "deployment_package.zip"
+  handler       = "index.lambda_handler"
+  runtime       = "python3.7"
   role          = "arn:aws:iam::${data.aws_caller_identity.current.account_id}:role/LabRole"
+  layers = [
+    "arn:aws:lambda:us-east-1:113088814899:layer:Klayers-python37-Pillow:11",
+  ]
   //Env variables for saving resized image
   environment {
     variables = {
