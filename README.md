@@ -1,4 +1,20 @@
 # Benutzeranleitung Bildverkleinerung Kenin, Williams, Filip
+
+Optinal:
+```
+sudo apt-get update && sudo apt-get install -y gnupg software-properties-common
+sudo apt update
+```
+Terraform installieren:
+```
+sudo apt-get install terraform
+```
+Installation verifizieren:
+```
+terraform -help
+```
+Ofizielle Dokumentation: https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli
+
 ## Erläuterung des Projekt
 Wir durften uns zwischen drei verschiedenen Projekten entschieden, welche wir umsetzen wollen. <br>
 Wir haben uns für das Bildverkleinerungsprojekt entschieden.<br>
@@ -34,3 +50,4 @@ Quellen:
 - https://www.geeksforgeeks.org/python-pil-image-resize-method/
 - https://boto3.amazonaws.com/v1/documentation/api/latest/guide/s3-examples.html
 - https://hackernoon.com/how-to-use-aws-s3-with-python
+- https://registry.terraform.io/providers/hashicorp/random/latest/docs/resources/string
