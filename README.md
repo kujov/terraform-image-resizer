@@ -11,5 +11,18 @@ Zu Beginn haben wir uns mit dem Aufteilen der Aufgaben. Die Aufgaben unterscheid
 - Williams:  Erstellung und Einbindung des Skripts, Entwicklung des Skripts
 - Filip: Erstellung und Umsetzung der Dokumentation, Entwicklung des Skripts
 
+## Schwierigkeiten
+**Dependencies auf Lambda:** Um die **Pillow** Library zu verwenden haben wir Layers verwendet. 
+```
+layers = [
+    "arn:aws:lambda:us-east-1:113088814899:layer:Klayers-python37-Pillow:11",
+  ]
+  ```
+(Achtung: diese sind Standortabhängig!)
+Quelle Layers: https://github.com/keithrozario/Klayers/blob/master/deployments/python3.7/arns/us-east-1.csv <br> <br>
+**Einstieg Terraform:** Vorab benötigte Terraform ein gewisses Know-How. Dies hat mich(Kenin) am Anfang ein wenig Zeit gekostet. Ich bevorzuge Terraform da ich generell denke "Config" files sind viel übersichtlicher und sorgen für Ordnung.
+
+
+
 Quellen:
 - https://medium.com/@neonforge/how-to-generate-unique-s3-bucket-names-in-terraform-devops-pro-tips-4d14c38d597f
