@@ -1,6 +1,6 @@
 # Benutzeranleitung Bildverkleinerung Kenin, Williams, Filip
 
-Optinal:
+Optional:
 ```
 sudo apt-get update && sudo apt-get install -y gnupg software-properties-common
 sudo apt update
