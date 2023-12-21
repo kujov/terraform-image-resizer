@@ -1,4 +1,4 @@
-# Benutzeranleitung Bildverkleinerung Modul 346 
+# Modul 346 Bildverkleinerungs-Service
 
 ## Anleitung Vorinstallation Terraform
 
