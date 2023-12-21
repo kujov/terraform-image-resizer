@@ -1,10 +1,12 @@
 # Benutzeranleitung Bildverkleinerung Kenin, Williams, Filip
 
-Optional:
+## Anleitung Vorinstallationen 
+### Optional:
 ```
 sudo apt-get update && sudo apt-get install -y gnupg software-properties-common
 sudo apt update
 ```
+### Essentiell:
 Terraform installieren:
 ```
 sudo apt-get install terraform
@@ -13,7 +15,10 @@ Installation verifizieren:
 ```
 terraform -help
 ```
-Ofizielle Dokumentation: https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli
+Offizielle Dokumentation: https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli
+
+## Anleitung Ausführung des Skripts
+
 
 ## Erläuterung des Projekt
 Wir durften uns zwischen drei verschiedenen Projekten entschieden, welche wir umsetzen wollen. <br>
@@ -29,19 +34,26 @@ Zu Beginn haben wir uns mit dem Aufteilen der Aufgaben. Die Aufgaben unterscheid
 
 ## Planung
 Wir haben zuerst ein erstes Konzept für das Projekt erstellt.
-Nämlich haben wir uns dazu entschieden ein Terraformscript für die Erzeugung unserer Buckets, sowie für das Skalieren und Abspeichern der Bilder in den verschiedenen Buckets.
+Nämlich haben wir uns dazu entschieden ein Terraformskript für die Erzeugung unserer Buckets, sowie für das Skalieren und Abspeichern der Bilder in den verschiedenen Buckets.
 Für Terraform haben wir uns entschieden, weil es einfacher organisiert ist und es auf Konfigurationen basiert.
 
-## Umsetzung unseres Scripts
-### Bildverkleinerung
+## Umsetzung der Bildverkleinerung
 
 ### Terraform
+Terraform ermöglicht es Nutzern, eine Infrastruktur as a Code zu verfassen. Das ermöglicht dem Nutzer das Ausführen der Infrastruktur per Knopfdruck. Bei unserer Softwarelösung die wir für die Bildverkleinerung erstellt haben, nutzen wir ebenfalls Terraform, um die ganzen Skripts/Codes zu bündeln und möglichst einfach und kompakt auszuführen. (//Bild TF//)
 
 ### AWS - Lambda-Funktion
+Die AWS - Lambda-Funktionen machen es für uns Nutzern möglich, Funktionen auszuführen ohne dafür den physischen Server dafür verwalten zu müssen. Bei uns wird die Lambda-Funktion verwendet, um die Bilder zu verkleinern und um das verkleinerte Bild in ein anderes Bucket zu verschieben. (//Bild Lambda-Funktion//)
 
 ### Test
+Die Tests zu Ausführung unseres Skripts haben wir auf einer komplett neuen und leeren Ubuntu VM vorgenommen, wo keine vorinstallationen beinhaltet, welches unsere Tests beinflussen könnten. Auf dieser VM haben wir dann die Anleitung einmal durch gemacht, um zu überprüfen, ob es bei Aussenstehenden auch einwandfrei funktionieren würde.
 
 ### Hilfsmittel
+Wir haben folgende Hilfmittel für die Entwicklung unseres Bildverkleinerungsprogramms verwendet:
+- Visual Studio Code (VSC) | Bearbeitung des MarkDown-Files
+- AWS CLI | Erstellung der Buckets, sowie Ausführung der Lambda-Funktionen
+- GitHub | Speicherort unseres Repositorys und Ort der Versionskontrolle
+- VMWare | Virtuelle Maschinen
 
 ## Schwierigkeiten
 **Dependencies auf Lambda:** Um die **Pillow** Library zu verwenden haben wir Layers verwendet. 
