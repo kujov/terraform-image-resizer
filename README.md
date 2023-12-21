@@ -27,6 +27,22 @@ Zu Beginn haben wir uns mit dem Aufteilen der Aufgaben. Die Aufgaben unterscheid
 - Williams:  Erstellung und Einbindung des Skripts, Entwicklung des Skripts
 - Filip: Erstellung und Umsetzung der Dokumentation, Entwicklung des Skripts
 
+## Planung
+Wir haben zuerst ein erstes Konzept für das Projekt erstellt.
+Nämlich haben wir uns dazu entschieden ein Terraformscript für die Erzeugung unserer Buckets, sowie für das Skalieren und Abspeichern der Bilder in den verschiedenen Buckets.
+Für Terraform haben wir uns entschieden, weil es einfacher organisiert ist und es auf Konfigurationen basiert.
+
+## Umsetzung unseres Scripts
+### Bildverkleinerung
+
+### Terraform
+
+### AWS - Lambda-Funktion
+
+### Test
+
+### Hilfsmittel
+
 ## Schwierigkeiten
 **Dependencies auf Lambda:** Um die **Pillow** Library zu verwenden haben wir Layers verwendet. 
 ```
@@ -38,7 +54,12 @@ layers = [
 Quelle Layers: https://github.com/keithrozario/Klayers/blob/master/deployments/python3.7/arns/us-east-1.csv <br> <br>
 **Einstieg Terraform:** Vorab benötigte Terraform ein gewisses Know-How. Dies hat mich(Kenin) am Anfang ein wenig Zeit gekostet. Ich bevorzuge Terraform da ich generell denke "Config" files sind viel übersichtlicher und sorgen für Ordnung.
 
-
+## Reflexion von Kenin
+Vorgabe: positive Punkte, Verbesserungsvorschläge für ein nächstes Projekt, Reflexion ist Substanz (nicht nur oberflächlich)
+## Reflexion von Williams
+Vorgabe: positive Punkte, Verbesserungsvorschläge für ein nächstes Projekt, Reflexion ist Substanz (nicht nur oberflächlich)
+## Reflexion von Filip
+Vorgabe: positive Punkte, Verbesserungsvorschläge für ein nächstes Projekt, Reflexion ist Substanz (nicht nur oberflächlich)
 
 Quellen:
 - https://medium.com/@neonforge/how-to-generate-unique-s3-bucket-names-in-terraform-devops-pro-tips-4d14c38d597f
