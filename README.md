@@ -70,6 +70,15 @@ Quelle Layers: https://github.com/keithrozario/Klayers/blob/master/deployments/p
 Vorgabe: positive Punkte, Verbesserungsvorschläge für ein nächstes Projekt, Reflexion ist Substanz (nicht nur oberflächlich)
 ## Reflexion von Williams
 Vorgabe: positive Punkte, Verbesserungsvorschläge für ein nächstes Projekt, Reflexion ist Substanz (nicht nur oberflächlich)
+In unserem Projekt lag mein Fokus auf der Entwicklung der Lambda-Funktion. Ursprünglich starteten wir mit JavaScript und versuchten, Node-Module zu integrieren, doch stellten fest, dass diese nicht mit unserer benötigten Engine kompatibel waren. Diese Erfahrung betonte die Wichtigkeit der Tool-Kompatibilität von Anfang an.
+
+Ein entscheidender Wendepunkt war der Wechsel zu Python, nachdem feststand, dass die Buckets bereits einsatzbereit waren. Dies erwies sich als äußerst effizient, da Python tiefer ins System greifen konnte und keine umfangreichen speziellen Pakete wie Node-Module erforderte.
+Die Verwendung von Terraform war ebenfalls positiv, obwohl die Einarbeitung anfangs herausfordernd war. Für zukünftige Projekte empfehle ich von Beginn an Python zu nutzen, sofern möglich, und die Tool-Kompatibilität sorgfältig zu überprüfen.
+Insgesamt war dieses Projekt eine lehrreiche Erfahrung, die meine Flexibilität und Problemlösungsfähigkeiten stärkte. Mit den vorgeschlagenen Verbesserungen hoffe ich auf noch erfolgreichere zukünftige Projekte.
+
+Während des Projekts konnte ich nicht nur meine Fähigkeiten in der Entwicklung der Lambda-Funktion verbessern, sondern auch wertvolles Wissen im Bereich Terraform und Cloud Computing sammeln. Der Übergang zu Python und die effiziente Verwendung von Terraform haben mir gezeigt, wie wichtig es ist, sich in diesen Technologien weiterzubilden. Insgesamt war dieses Projekt eine wertvolle Lerngelegenheit, die meine Expertise erweitert hat und mich besser auf zukünftige Herausforderungen im Bereich Cloud Computing und Infrastrukturmanagement vorbereitet hat.
+
+Meine Verbesserungsvorschläge für das nächste Projekt, ist es sich von anfang an etwas besser zu erkundigen. Da ich vorallem viel Zeit verschwendet habe, bis ich gemerkt habe das die node modules nicht kompatibel sind mit der Engine selbst. Im Gesamten habe ich sonst, eigentlich das Projektmamagement sehr gut gefunden und würde es so wieder machen.
 ## Reflexion von Filip
 Vorgabe: positive Punkte, Verbesserungsvorschläge für ein nächstes Projekt, Reflexion ist Substanz (nicht nur oberflächlich)
 
