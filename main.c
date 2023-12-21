@@ -37,6 +37,7 @@ void setEnvironmentVariable(const char *varName, const char *value) {
 void startInfrastructure() {
     printf("Starting infrastructure...\n");
     executeSystemCommand("terraform init");
+    executeSystemCommand("terraform plan");
     executeSystemCommand("terraform apply -auto-approve");
 
     FILE *fp = popen("terraform output -raw first_bucket_name", "r");
