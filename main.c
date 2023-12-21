@@ -80,9 +80,18 @@ void uploadImage() {
                 fgets(buffer, sizeof(buffer), stdin);
                 strtok(buffer, "\n");
 
-                char command[COMMAND_SIZE];
-                snprintf(command, sizeof(command), "aws s3 cp \"%s\" s3://%s/", buffer, bucketName);
-                executeSystemCommand(command);
+                char *fileExtension = strrchr(buffer, '.');
+                if (fileExtension != NULL) {
+                    if (strcmp(fileExtension, ".jpeg") == 0 || strcmp(fileExtension, ".jpg") == 0) {
+                        char command[COMMAND_SIZE];
+                        snprintf(command, sizeof(command), "aws s3 cp \"%s\" s3://%s/", buffer, bucketName);
+                        executeSystemCommand(command);
+                    } else {
+                        fprintf(stderr, "Invalid file extension. Only .jpeg and .jpg files are allowed.\n");
+                    }
+                } else {
+                    fprintf(stderr, "Invalid file path.\n");
+                }
             }
         }
         fclose(envFile);
