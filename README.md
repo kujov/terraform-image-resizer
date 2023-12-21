@@ -94,8 +94,10 @@ Meine Verbesserungsvorschläge für das nächste Projekt, ist es sich von anfang
 Vorgabe: positive Punkte, Verbesserungsvorschläge für ein nächstes Projekt, Reflexion ist Substanz (nicht nur oberflächlich)
 Mein Schwerpunkt in diesem Projekt war eher das Verfassen der Dokumentation, da wir zu dritt waren und die Aufgaben somit ein bisschen eingeschränkt waren, wer was machen konnte. Dennoch konnte ich ebenfalls ein wenig Hilfe beim Planen und teils beim Entwicklen des Skripts leisten, was mir Freude bereitete.
 Gerne hätte ich mich ein bisschen mehr mit der Materie von AWS und Python vertraut gemacht, aber der Punkt dass wir zu dritt waren hat mir ein bisschen gegen die Karten gespielt, was nicht heisst dass ich nicht trotzdessen einiges an hilfreichem Knowhow einholen konnte. 
+
 Da ich mich intensiv mit der Dokumentation befasst habe, musste ich mich auch in die Skripts der Anderen einlesen und mich mit den darin enthaltenen Elementen vertraut machen, um es überhaupt verfassen zu können.
 Ein grosser Schwerpunkt bestand bei mir darin die Elemente von Terraform zu verstehen, da ich garkeine Vorkenntnisse in diesem Teil der Informatik mitbringen konnte. Dennoch war es mir möglich durch die Hilfe von Kenin und Williams mich schnell darin einfinden und dies zu Dokumentieren.
+
 Für das nächste Projekt hoffe ich, dass ich eine grössere Rolle im Bereich der Entwicklung eines Programms oder eines Skripts einnehmen kann, damit mich intensiver mit der Materie befassen kann und mir somit zusätzlich wichtiges Knowhow einholen kann.
 Ein weiterer Punkt wäre den ich gerne anderst umsetzen würde ist der Aspekt, dass ich bei Dokumentationen nicht direkt losschreiben sollte, sondern mir zuerst einen groben Überblick über das grosse Ganze zu verschaffen, damit ich im Nachhinein weniger Änderungen vornehmen muss.
 
