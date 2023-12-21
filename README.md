@@ -2,6 +2,11 @@
 
 ## Anleitung Vorinstallation Terraform
 
+AWS CLI Installation:
+```
+sudo snap install aws-cli --classic
+```
+Alle benötigten Abhängigkeiten für Terraform:
 ```
 sudo apt-get update && sudo apt-get install -y gnupg software-properties-common
 ```
@@ -23,6 +28,7 @@ sudo tee /etc/apt/sources.list.d/hashicorp.list
 ```
 sudo apt update
 ```
+Installation Terraform:
 ```
 sudo apt-get install terraform
 ```
@@ -30,6 +36,24 @@ Offizielle Dokumentation: https://developer.hashicorp.com/terraform/tutorials/aw
 
 ## Anleitung Ausführung des Skripts
 
+```
+./main
+```
+Das Menu sollte folgend aussehen:
+```console
+Welcome to the Infrastructure Management System
+-------------------------------------------------
+Please select an action by entering the command name:
+  start  - Start the infrastructure
+  stop   - Stop the infrastructure
+  upload - Upload an image to the infrastructure
+-------------------------------------------------
+Enter your choice: 
+```
+Nun gibt es 3 Optionen:
+- start:    Startet die Infrastruktur
+- stop:     Stoppt die Infrastruktur
+- upload:   Ladet ein Foto in den ersten Bucket hoch
 
 ## Erläuterung des Projekt
 Wir durften uns zwischen drei verschiedenen Projekten entschieden, welche wir umsetzen wollen. <br>
@@ -77,13 +101,21 @@ layers = [
 Quelle Layers: https://github.com/keithrozario/Klayers/blob/master/deployments/python3.7/arns/us-east-1.csv <br> <br>
 **Einstieg Terraform:** Vorab benötigte Terraform ein gewisses Know-How. Dies hat mich(Kenin) am Anfang ein wenig Zeit gekostet. Ich bevorzuge Terraform da ich generell denke "Config" files sind viel übersichtlicher und sorgen für Ordnung.
 
-## Reflexion von Kenin
-Vorgabe: positive Punkte, Verbesserungsvorschläge für ein nächstes Projekt, Reflexion ist Substanz (nicht nur oberflächlich)
+## Reflexion von Kenin:
+
+Zu Beginn hatte ich nur begrenztes Know-how im Umgang mit Terraform. Dennoch begeistere ich mich für Konfigurationsdateien, wie sie beispielsweise bei Docker Compose zum Einsatz kommen. Aus diesem Grund entschied ich mich für Terraform. Bei der Lambda-Funktion empfahl ich Williams die Verwendung von Python, da ich über umfangreiche Kenntnisse in dieser Sprache verfüge und ihm gegebenenfalls bei Problemen behilflich sein kann.
+
+Ich stiess auf keine grösseren Probleme, da ich zuvor alle Details mit meinem Team besprochen und die Aufgaben aufgeteilt hatte. Um Stress und Fehler zu vermeiden, hielt ich mich strikt an den Zeitplan. Gleichzeitig suchte ich nach neuen Herausforderungen, um mein Wissen zu erweitern. In diesem Zusammenhang lernte ich die Python-Bibliothek Pillow sowie die S3-API näher kennen, was mein Verständnis für die Integration von Bildverarbeitung und Cloud-Speicher vertiefte.
+
+Durch diese Erfahrungen habe ich nun eine solide Grundlage im Umgang mit Terraform erlernt und werde es in zukünftigen Projekten, die Infrastructure as Code (IaC) nutzen, sicherlich wieder einsetzen
+
+Für zukünftige Projekte nehme ich mir vor, nach einer intensiven oder frustrierenden Arbeitssession eine Pause einzulegen oder eine Nacht darüber zu schlafen. Dies hat sich als effektiv erwiesen, um mit einem frischen Blick und erneuerter Energie an Herausforderungen heranzugehen. Zudem plane ich, regelmässige Reflexionen und die Dokumentation von Erkenntnissen in meinen Arbeitsablauf zu integrieren. Dies wird mir helfen, Muster in meinen Herausforderungen zu erkennen und meine Ansätze kontinuierlich zu verbessern. Weiterhin möchte ich den Austausch mit Kollegen durch regelmässige Peer-Reviews meiner Codes und Konfigurationen verstärken, um von unterschiedlichen Perspektiven und Erfahrungen zu profitieren.
+
 ## Reflexion von Williams
 Vorgabe: positive Punkte, Verbesserungsvorschläge für ein nächstes Projekt, Reflexion ist Substanz (nicht nur oberflächlich)
 In unserem Projekt lag mein Fokus auf der Entwicklung der Lambda-Funktion. Ursprünglich starteten wir mit JavaScript und versuchten, Node-Module zu integrieren, doch stellten fest, dass diese nicht mit unserer benötigten Engine kompatibel waren. Diese Erfahrung betonte die Wichtigkeit der Tool-Kompatibilität von Anfang an.
 
-Ein entscheidender Wendepunkt war der Wechsel zu Python, nachdem feststand, dass die Buckets bereits einsatzbereit waren. Dies erwies sich als äußerst effizient, da Python tiefer ins System greifen konnte und keine umfangreichen speziellen Pakete wie Node-Module erforderte.
+Ein entscheidender Wendepunkt war der Wechsel zu Python, nachdem feststand, dass die Buckets bereits einsatzbereit waren. Dies erwies sich als äusserst effizient, da Python tiefer ins System greifen konnte und keine umfangreichen speziellen Pakete wie Node-Module erforderte.
 Die Verwendung von Terraform war ebenfalls positiv, obwohl die Einarbeitung anfangs herausfordernd war. Für zukünftige Projekte empfehle ich von Beginn an Python zu nutzen, sofern möglich, und die Tool-Kompatibilität sorgfältig zu überprüfen.
 Insgesamt war dieses Projekt eine lehrreiche Erfahrung, die meine Flexibilität und Problemlösungsfähigkeiten stärkte. Mit den vorgeschlagenen Verbesserungen hoffe ich auf noch erfolgreichere zukünftige Projekte.
 
