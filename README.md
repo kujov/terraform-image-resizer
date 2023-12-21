@@ -92,6 +92,14 @@ Während des Projekts konnte ich nicht nur meine Fähigkeiten in der Entwicklung
 Meine Verbesserungsvorschläge für das nächste Projekt, ist es sich von anfang an etwas besser zu erkundigen. Da ich vorallem viel Zeit verschwendet habe, bis ich gemerkt habe das die node modules nicht kompatibel sind mit der Engine selbst. Im Gesamten habe ich sonst, eigentlich das Projektmamagement sehr gut gefunden und würde es so wieder machen.
 ## Reflexion von Filip
 Vorgabe: positive Punkte, Verbesserungsvorschläge für ein nächstes Projekt, Reflexion ist Substanz (nicht nur oberflächlich)
+Mein Schwerpunkt in diesem Projekt war eher das Verfassen der Dokumentation, da wir zu dritt waren und die Aufgaben somit ein bisschen eingeschränkt waren, wer was machen konnte. Dennoch konnte ich ebenfalls ein wenig Hilfe beim Planen und teils beim Entwicklen des Skripts leisten, was mir Freude bereitete.
+Gerne hätte ich mich ein bisschen mehr mit der Materie von AWS und Python vertraut gemacht, aber der Punkt dass wir zu dritt waren hat mir ein bisschen gegen die Karten gespielt, was nicht heisst dass ich nicht trotzdessen einiges an hilfreichem Knowhow einholen konnte. 
+Da ich mich intensiv mit der Dokumentation befasst habe, musste ich mich auch in die Skripts der Anderen einlesen und mich mit den darin enthaltenen Elementen vertraut machen, um es überhaupt verfassen zu können.
+Ein grosser Schwerpunkt bestand bei mir darin die Elemente von Terraform zu verstehen, da ich garkeine Vorkenntnisse in diesem Teil der Informatik mitbringen konnte. Dennoch war es mir möglich durch die Hilfe von Kenin und Williams mich schnell darin einfinden und dies zu Dokumentieren.
+Für das nächste Projekt hoffe ich, dass ich eine grössere Rolle im Bereich der Entwicklung eines Programms oder eines Skripts einnehmen kann, damit mich intensiver mit der Materie befassen kann und mir somit zusätzlich wichtiges Knowhow einholen kann.
+Ein weiterer Punkt wäre den ich gerne anderst umsetzen würde ist der Aspekt, dass ich bei Dokumentationen nicht direkt losschreiben sollte, sondern mir zuerst einen groben Überblick über das grosse Ganze zu verschaffen, damit ich im Nachhinein weniger Änderungen vornehmen muss.
+
+Mein kurzes Fazit zu diesem Projekt und diesem Modul ist, dass ich es sehr spannend und erstaunlich finde/fand, wie praktisch und vielseitig man IT-Komponenten der Cloud einsetzen kann, ohne dabei einen grossen Aufwand zu betreiben. Cloud findet immer mehr und mehr einen sicheren Platz in der IT und es ist sehr hilfreich sich bereits in der Ausbildung damit auseinander zu setzten und sich gewisse Vorkenntnisse diesbezüglich anzueignen.
 
 Quellen:
 - https://medium.com/@neonforge/how-to-generate-unique-s3-bucket-names-in-terraform-devops-pro-tips-4d14c38d597f
