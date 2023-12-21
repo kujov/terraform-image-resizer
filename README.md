@@ -53,7 +53,7 @@ Wir haben folgende Hilfmittel für die Entwicklung unseres Bildverkleinerungspro
 - Visual Studio Code (VSC) | Bearbeitung des MarkDown-Files
 - AWS CLI | Erstellung der Buckets, sowie Ausführung der Lambda-Funktionen
 - GitHub | Speicherort unseres Repositorys und Ort der Versionskontrolle
-- VMWare | Virtuelle Maschinen
+- VMWare | Virtuelle Maschinen als Grundlage auf denen z.B. die AWS CLI läuft
 
 ## Schwierigkeiten
 **Dependencies auf Lambda:** Um die **Pillow** Library zu verwenden haben wir Layers verwendet. 
