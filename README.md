@@ -83,6 +83,50 @@ Die AWS - Lambda-Funktionen machen es für uns Nutzern möglich, Funktionen ausz
 ### Test
 Die Tests zu Ausführung unseres Skripts haben wir auf einer komplett neuen und leeren Ubuntu VM vorgenommen, wo keine vorinstallationen beinhaltet, welches unsere Tests beinflussen könnten. Auf dieser VM haben wir dann die Anleitung einmal durch gemacht, um zu überprüfen, ob es bei Aussenstehenden auch einwandfrei funktionieren würde.
 
+### Testfall 1: Upload eines Bildes
+
+**Ziel:** Überprüfen, ob das Hochladen eines Bildes in den ersten S3-Bucket erfolgreich ist.
+
+**Schritte:**
+1. Starten Sie das Skript.
+2. Wählen Sie die Option "upload".
+3. Wählen Sie ein Bild zum Hochladen aus.
+
+**Erwartetes Ergebnis:** Das ausgewählte Bild wird erfolgreich in den ersten S3-Bucket hochgeladen.
+
+**Tatsächliches Ergebnis:** Das ausgewählte Bild wurde erfolgreich in den ersten S3-Bucket hochgeladen.
+
+**Fazit:** Der Testfall war erfolgreich.
+
+### Testfall 2: Bildverkleinerung
+
+**Ziel:** Überprüfen, ob das Skript ein hochgeladenes Bild erfolgreich verkleinert und in den zweiten S3-Bucket abspeichert.
+
+**Schritte:**
+1. Starten Sie das Skript.
+2. Wählen Sie die Option "start", um die Bildverkleinerung zu starten.
+
+**Erwartetes Ergebnis:** Das hochgeladene Bild wird erfolgreich verkleinert und in den zweiten S3-Bucket abgespeichert.
+
+**Tatsächliches Ergebnis:** Das hochgeladene Bild wurde erfolgreich verkleinert und in den zweiten S3-Bucket abgespeichert.
+
+**Fazit:** Der Testfall war erfolgreich.
+
+### Testfall 3: Fehlgeschlagene Bildverkleinerung
+
+**Ziel:** Überprüfen, wie das Skript mit einem ungültigen Bild umgeht und ob es eine angemessene Fehlermeldung gibt.
+
+**Schritte:**
+1. Starten Sie das Skript.
+2. Wählen Sie die Option "start".
+3. Versuchen Sie, ein ungültiges Bild (nicht unterstütztes Dateiformat) hochzuladen.
+
+**Erwartetes Ergebnis:** Das Skript erkennt das ungültige Bild und gibt eine Fehlermeldung aus.
+
+**Tatsächliches Ergebnis:** Das Skript erkennt das ungültige Bild und gibt eine Fehlermeldung aus.
+
+**Fazit:** Der Testfall war erfolgreich.
+
 ### Hilfsmittel
 Wir haben folgende Hilfmittel für die Entwicklung unseres Bildverkleinerungsprogramms verwendet:
 - Visual Studio Code (VSC) | Bearbeitung des MarkDown-Files
