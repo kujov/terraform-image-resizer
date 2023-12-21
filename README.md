@@ -123,7 +123,7 @@ Während des Projekts konnte ich nicht nur meine Fähigkeiten in der Entwicklung
 
 Meine Verbesserungsvorschläge für das nächste Projekt, ist es sich von anfang an etwas besser zu erkundigen. Da ich vorallem viel Zeit verschwendet habe, bis ich gemerkt habe das die node modules nicht kompatibel sind mit der Engine selbst. Im Gesamten habe ich sonst, eigentlich das Projektmamagement sehr gut gefunden und würde es so wieder machen.
 ## Reflexion von Filip
-Mein Schwerpunkt in diesem Projekt war eher das Verfassen der Dokumentation, da wir zu dritt waren und die Aufgaben somit ein bisschen eingeschränkt waren, wer was machen konnte. Dennoch konnte ich ebenfalls ein wenig Hilfe beim Planen und teils beim Entwicklen des Skripts leisten, was mir Freude bereitete.
+Mein Schwerpunkt in diesem Projekt bestand darin mich mit dem Verfassen der Dokumentation auseinanderzusetzen, da wir zu dritt waren und somit mit der Flexibiliät der Aufgaben ein bisschen eingeschränkt waren, wer, wo ,was machen konnte. Dennoch konnte ich ebenfalls ein wenig Hilfe beim Planen und teils beim Entwicklen des Skripts leisten, was mir Freude bereitete.
 Gerne hätte ich mich ein bisschen mehr mit der Materie von AWS und Python vertraut gemacht, aber der Punkt dass wir zu dritt waren hat mir ein bisschen gegen die Karten gespielt, was nicht heisst dass ich nicht trotzdessen einiges an hilfreichem Knowhow einholen konnte. 
 
 Da ich mich intensiv mit der Dokumentation befasst habe, musste ich mich auch in die Skripts der Anderen einlesen und mich mit den darin enthaltenen Elementen vertraut machen, um es überhaupt verfassen zu können.
