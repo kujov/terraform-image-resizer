@@ -1,96 +1,91 @@
-//DISCLAIMER: This code is probably the worst code you've seen. It was coded in a few minutes ;)
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
 
+#define BUFFER_SIZE 1024
+#define COMMAND_SIZE 2048
+
+void executeSystemCommand(const char *command) {
+    if (system(command) != 0) {
+        fprintf(stderr, "Error executing command: %s\n", command);
+    }
+}
+
+FILE* openFile(const char *filename, const char *mode) {
+    FILE *file = fopen(filename, mode);
+    if (file == NULL) {
+        fprintf(stderr, "Error opening file: %s\n", filename);
+    }
+    return file;
+}
+
+void flushStdin() {
+    int c;
+    while ((c = getchar()) != '\n' && c != EOF);
+}
+
+void setEnvironmentVariable(const char *varName, const char *value) {
+    setenv(varName, value, 1);
+
+    FILE *envFile = openFile(".kenin", "w");
+    if (envFile != NULL) {
+        fprintf(envFile, "%s=%s\n", varName, value);
+        fclose(envFile);
+    }
+}
 
 void startInfrastructure() {
     printf("Starting infrastructure...\n");
-    system("terraform init");
-    system("terraform apply -auto-approve");
+    executeSystemCommand("terraform init");
+    executeSystemCommand("terraform apply -auto-approve");
 
     FILE *fp = popen("terraform output -raw first_bucket_name", "r");
     if (fp == NULL) {
-        fprintf(stderr, "Error executing Terraform output command\n");
         exit(EXIT_FAILURE);
     }
 
-    char buffer[1024];
+    char buffer[BUFFER_SIZE];
     fgets(buffer, sizeof(buffer), fp);
-
     pclose(fp);
 
     strtok(buffer, "\n");
-
-    setenv("FIRST_BUCKET_NAME", buffer, 1);
-
-    FILE *envFile = fopen(".kenin", "w");
-    if (envFile != NULL) {
-        fprintf(envFile, "FIRST_BUCKET_NAME=%s\n", getenv("FIRST_BUCKET_NAME"));
-        fclose(envFile);
-    } else {
-        fprintf(stderr, "Error creating .kenin file\n");
-    }
+    setEnvironmentVariable("FIRST_BUCKET_NAME", buffer);
 
     printf("Infrastructure is up and running...\n");
 }
 
 void stopInfrastructure() {
     printf("Stopping infrastructure...\n");
-    system("terraform destroy -auto-approve");
-    system("clear");
-    printf("infrastructure has been successfully destroyed...\n");
+    executeSystemCommand("terraform destroy -auto-approve");
+    executeSystemCommand("clear");
+    printf("Infrastructure has been successfully destroyed...\n");
 }
-
-void flushStdin();
 
 void uploadImage() {
     printf("Uploading Image...\n");
 
-    FILE *envFile = fopen(".kenin", "r");
+    FILE *envFile = openFile(".kenin", "r");
     if (envFile != NULL) {
-        char buffer[1024];
+        char buffer[BUFFER_SIZE];
 
         if (fgets(buffer, sizeof(buffer), envFile) != NULL) {
-            char *value = strchr(buffer, '=');
-            if (value != NULL) {
-                value++;
-                strtok(value, "\n");
+            char *bucketName = strchr(buffer, '=');
+            if (bucketName != NULL) {
+                bucketName++;
+                strtok(bucketName, "\n");
 
                 printf("Enter the file path to upload: ");
-                flushStdin();  // Flush stdinput buffer or somehow it doesnt work lol
+                flushStdin();
                 fgets(buffer, sizeof(buffer), stdin);
                 strtok(buffer, "\n");
 
-                FILE *file = fopen(buffer, "r");
-                if (file != NULL) {
-                    fclose(file);
-
-                    char command[2048];
-                    snprintf(command, sizeof(command), "aws s3 cp \"%s\" s3://%s/", buffer, value);
-
-                    int result = system(command);
-
-                    if (result == 0) {
-                        printf("File uploaded successfully to S3 bucket: %s\n", value);
-                    } else {
-                        fprintf(stderr, "Error uploading file to S3\n");
-                    }
-                } else {
-                    fprintf(stderr, "File does not exist: %s\n", buffer);
-                }
+                char command[COMMAND_SIZE];
+                snprintf(command, sizeof(command), "aws s3 cp \"%s\" s3://%s/", buffer, bucketName);
+                executeSystemCommand(command);
             }
         }
-
         fclose(envFile);
-    } else {
-        fprintf(stderr, "Error opening .kenin file\n");
     }
-}
-
-void flushStdin() {
-    int c;
-    while ((c = getchar()) != '\n' && c != EOF);
 }
 
 void handleUnknownCommand(const char *commandName) {
@@ -112,13 +107,20 @@ void performInfrastructureAction(const char *commandName) {
 int main(void) {
     char commandName[20];
 
-    printf("Enter the infrastructure service action: ");
+        printf("\nWelcome to the Infrastructure Management System\n");
+    printf("-------------------------------------------------\n");
+    printf("Please select an action by entering the command name:\n");
+    printf("  start  - Start the infrastructure\n");
+    printf("  stop   - Stop the infrastructure\n");
+    printf("  upload - Upload an image to the infrastructure\n");
+    printf("-------------------------------------------------\n");
+    printf("Enter your choice: ");
 
     if (scanf("%19s", commandName) != 1) {
         printf("Error reading input.\n");
         return 1;
     }
-
+    
     performInfrastructureAction(commandName);
 
     return 0;
