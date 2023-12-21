@@ -1,4 +1,4 @@
-# Benutzeranleitung Bildverkleinerung Kenin, Williams, Filip
+# Benutzeranleitung Bildverkleinerung Modul 346 
 
 ## Anleitung Vorinstallation Terraform
 
