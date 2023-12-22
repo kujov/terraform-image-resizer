@@ -53,7 +53,7 @@ Enter your choice:
 Nun gibt es 3 Optionen:
 - start:    Startet die Infrastruktur
 - stop:     Stoppt die Infrastruktur
-- upload:   Ladet ein Foto in den ersten Bucket hoch
+- upload:   Ladet ein Foto in den ersten Bucket hoch(relativer Pfad)
 
 ## Erläuterung des Projekt
 Wir durften uns zwischen drei verschiedenen Projekten entschieden, welche wir umsetzen wollen. <br>
@@ -126,6 +126,9 @@ Die Tests zu Ausführung unseres Skripts haben wir auf einer komplett neuen und 
 **Tatsächliches Ergebnis:** Das Skript erkennt das ungültige Bild und gibt eine Fehlermeldung aus.
 
 **Fazit:** Der Testfall war erfolgreich.
+
+## Beachtung!:
+Beim ändern des Python(Lambda) Codes muss das deployment_package neu komprimiert werden.
 
 ### Hilfsmittel
 Wir haben folgende Hilfmittel für die Entwicklung unseres Bildverkleinerungsprogramms verwendet:
