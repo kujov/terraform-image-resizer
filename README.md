@@ -189,3 +189,6 @@ Quellen:
 - https://boto3.amazonaws.com/v1/documentation/api/latest/guide/s3-examples.html
 - https://hackernoon.com/how-to-use-aws-s3-with-python
 - https://registry.terraform.io/providers/hashicorp/random/latest/docs/resources/string
+
+## Dankung
+Vielen Dank an meine Kollegen für die hervorragende Zusammenarbeit. Wir haben nicht nur effektiv gearbeitet, sondern konnten auch voneinander lernen und uns neuen Herausforderungen stellen. Eure Unterstützung und Teamgeist waren entscheidend für unseren Erfolg.
