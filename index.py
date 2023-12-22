@@ -1,3 +1,9 @@
+'''
+Datum: 22.12.2023
+Autor: Williams Pesic, Kenin Kujovic
+Quellen: https://devdocs.io/c/
+'''
+
 import os
 import json
 import boto3
