@@ -1,3 +1,8 @@
+/*
+Datum: 22.12.2023
+Autor: Williams Pesic, Kenin Kujovic
+Quellen: https://devdocs.io/c/
+*/
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
