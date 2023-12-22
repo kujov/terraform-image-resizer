@@ -1,7 +1,7 @@
 '''
 Datum: 22.12.2023
 Autor: Williams Pesic, Kenin Kujovic
-Quellen: https://devdocs.io/c/
+Quellen: https://devdocs.io/python~3.9/
 '''
 
 import os

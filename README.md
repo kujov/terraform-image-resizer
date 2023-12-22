@@ -75,10 +75,27 @@ Für Terraform haben wir uns entschieden, weil es einfacher organisiert ist und 
 ## Umsetzung der Bildverkleinerung
 
 ### Terraform
-Terraform ermöglicht es Nutzern, eine Infrastruktur as a Code zu verfassen. Das ermöglicht dem Nutzer das Ausführen der Infrastruktur per Knopfdruck. Bei unserer Softwarelösung die wir für die Bildverkleinerung erstellt haben, nutzen wir ebenfalls Terraform, um die ganzen Skripts/Codes zu bündeln und möglichst einfach und kompakt auszuführen. (//Bild TF//)
+Terraform ermöglicht es Nutzern, eine Infrastruktur as a Code zu verfassen. Das ermöglicht dem Nutzer das Ausführen der Infrastruktur per Knopfdruck. Bei unserer Softwarelösung die wir für die Bildverkleinerung erstellt haben, nutzen wir ebenfalls Terraform, um die ganzen Skripts/Codes zu bündeln und möglichst einfach und kompakt auszuführen.
+![Lokales Bild](./readMeSrc/terraform.png)
+
+
+## Hilfsmittel
+Während der Entwicklung unseres Bildverkleinerungsprogramms haben wir verschiedene Werkzeuge und Technologien genutzt. Die folgende Tabelle gibt einen Überblick über diese Hilfsmittel und deren spezifischen Einsatzbereich in unserem Projekt:
+
+| Hilfsmittel                | Verwendungszweck                                                                                           |
+|----------------------------|-----------------------------------------------------------------------------------------------------------|
+| Visual Studio Code (VSC)   | Bearbeitung des Markdown-Files und des Skriptcodes.                                                        |
+| AWS CLI                    | Erstellung und Verwaltung der AWS S3 Buckets, sowie Ausführung und Überwachung der Lambda-Funktionen.       |
+| GitHub                     | Als Speicherort unseres Repositories und für die Versionskontrolle des Projektcodes.                        |
+| VMWare                     | Bereitstellung von virtuellen Maschinen, auf denen Tools wie die AWS CLI ausgeführt werden.                 |
+| Terraform                  | Infrastruktur als Code für die automatisierte Einrichtung und Verwaltung der AWS-Ressourcen.                |
+| Python (Lambda-Funktionen) | Entwicklung und Implementierung von Skripten für die Bildverkleinerung und das Bucket-Management.           |
+
+Diese Werkzeuge spielten eine entscheidende Rolle in unserem Entwicklungsprozess und trugen maßgeblich zum Erfolg des Projekts bei.
 
 ### AWS - Lambda-Funktion
-Die AWS - Lambda-Funktionen machen es für uns Nutzern möglich, Funktionen auszuführen ohne dafür den physischen Server dafür verwalten zu müssen. Bei uns wird die Lambda-Funktion verwendet, um die Bilder zu verkleinern und um das verkleinerte Bild in ein anderes Bucket zu verschieben. (//Bild Lambda-Funktion//)
+Die AWS - Lambda-Funktionen machen es für uns Nutzern möglich, Funktionen auszuführen ohne dafür den physischen Server dafür verwalten zu müssen. Bei uns wird die Lambda-Funktion verwendet, um die Bilder zu verkleinern und um das verkleinerte Bild in ein anderes Bucket zu verschieben. 
+![Lokales Bild](./readMeSrc/lambda.png)
 
 ### Test
 Die Tests zu Ausführung unseres Skripts haben wir auf einer komplett neuen und leeren Ubuntu VM vorgenommen, wo keine vorinstallationen beinhaltet, welches unsere Tests beinflussen könnten. Auf dieser VM haben wir dann die Anleitung einmal durch gemacht, um zu überprüfen, ob es bei Aussenstehenden auch einwandfrei funktionieren würde.
