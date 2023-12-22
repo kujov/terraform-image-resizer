@@ -114,6 +114,11 @@ Die Tests zu Ausführung unseres Skripts haben wir auf einer komplett neuen und 
 **Tatsächliches Ergebnis:** Das ausgewählte Bild wurde erfolgreich in den ersten S3-Bucket hochgeladen.
 
 **Fazit:** Der Testfall war erfolgreich.
+<br>
+Fotos:
+<img width="796" alt="grafik" src="https://github.com/keninkujovic/terraform-image-resizer/assets/94907234/ea40201c-a93b-4191-a24e-ec2713ae01b8">
+<img width="1099" alt="grafik" src="https://github.com/keninkujovic/terraform-image-resizer/assets/94907234/49a7b7d8-c951-4065-a38e-56244333d836">
+
 
 ### Testfall 2: Bildverkleinerung
 
@@ -129,6 +134,11 @@ Die Tests zu Ausführung unseres Skripts haben wir auf einer komplett neuen und 
 
 **Fazit:** Der Testfall war erfolgreich.
 
+<br>
+Foto Bucketafter:
+<img width="1103" alt="grafik" src="https://github.com/keninkujovic/terraform-image-resizer/assets/94907234/b6f1fcc2-1beb-485c-a711-c81c40e9e7d7">
+
+
 ### Testfall 3: Fehlgeschlagene Bildverkleinerung
 
 **Ziel:** Überprüfen, wie das Skript mit einem ungültigen Bild umgeht und ob es eine angemessene Fehlermeldung gibt.
@@ -143,6 +153,10 @@ Die Tests zu Ausführung unseres Skripts haben wir auf einer komplett neuen und 
 **Tatsächliches Ergebnis:** Das Skript erkennt das ungültige Bild und gibt eine Fehlermeldung aus.
 
 **Fazit:** Der Testfall war erfolgreich.
+<br>
+Foto:
+<img width="704" alt="grafik" src="https://github.com/keninkujovic/terraform-image-resizer/assets/94907234/ae64e437-9053-4a88-9781-85cf9ead7601">
+
 
 ## Beachtung!:
 Beim ändern des Python(Lambda) Codes muss das deployment_package neu komprimiert werden.
