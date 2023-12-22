@@ -147,13 +147,6 @@ Die Tests zu Ausführung unseres Skripts haben wir auf einer komplett neuen und 
 ## Beachtung!:
 Beim ändern des Python(Lambda) Codes muss das deployment_package neu komprimiert werden.
 
-### Hilfsmittel
-Wir haben folgende Hilfmittel für die Entwicklung unseres Bildverkleinerungsprogramms verwendet:
-- Visual Studio Code (VSC) | Bearbeitung des MarkDown-Files
-- AWS CLI | Erstellung der Buckets, sowie Ausführung der Lambda-Funktionen
-- GitHub | Speicherort unseres Repositorys und Ort der Versionskontrolle
-- VMWare | Virtuelle Maschinen als Grundlage auf denen z.B. die AWS CLI läuft
-
 ## Schwierigkeiten
 **Dependencies auf Lambda:** Um die **Pillow** Library zu verwenden haben wir Layers verwendet. 
 ```
